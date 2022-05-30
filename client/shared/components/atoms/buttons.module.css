@@ -1,0 +1,64 @@
+.button {
+  border-radius: var(--space-2x);
+  border: none;
+  color: var(--brand);
+  background: var(--paper);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: var(--text-md);
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  outline: none;
+  transition: background-color 0.2s ease;
+  padding: 0 var(--space-4x);
+  height: 50px;
+  width: 400px;
+  min-width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonsdiv {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.primary {
+  background: var(--brand);
+  color: #fff;
+}
+
+.button:hover,
+.button:focus {
+  background: var(--background);
+  color: var(--brand);
+  border: 1px solid var(--brand);
+}
+
+.pdiv {
+  margin: var(--space-4x);
+  text-align: center;
+  color: #fff;
+}
+
+.button:hover > svg,
+.button:focus > svg {
+  fill: var(--brand);
+}
+
+.button > svg {
+  margin-left: var(--space-2x);
+  min-height: var(--space-8x);
+  min-width: var(--space-8x);
+}
+
+@media (max-width: 568px) {
+  .buttonsdiv {
+    flex-direction: column;
+  }
+  .button {
+    width: 100%;
+  }
+}
